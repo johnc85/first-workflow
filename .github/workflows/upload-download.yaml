@@ -6,9 +6,9 @@ jobs:
     steps:
       - run: | 
           ls -lrth
-          touch: teste.txt
-          echo: Teste Gravaçao de Arquivo" > teste.txt
-          cat: teste.txt
+          touch teste.txt
+          echo "Teste Gravaçao de Arquivo" > teste.txt
+          cat teste.txt
         shell: bash
 
   Download:
