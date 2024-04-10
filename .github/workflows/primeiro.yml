@@ -5,13 +5,13 @@ jobs:
     runs-on: "ubuntu-latest"
     steps:
       - run: echo "Build"
-    shell: bash
+        shell: bash
 
   build-multiline:
     runs-on: 
     steps:
-      run: | 
-        echo "Build-Multine"
-        date
-        ls -lrth --color
-      shell: bash
+      - run: | 
+          echo "Build-Multine"
+          date
+          ls -lrth --color
+        shell: bash
