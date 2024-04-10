@@ -1,0 +1,10 @@
+name: "Action-na-Prática"
+on: push
+jobs: 
+  action-na-pratica:
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: actions/hello-world-javascript-action@main
+        with:
+          who-to-greet: "Testes Pipes Action publica"
+
