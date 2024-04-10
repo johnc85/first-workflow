@@ -1,0 +1,21 @@
+acname: "Actions de Upload e Download"
+on: push
+jobs: 
+  Upload: 
+    runs-on: "ubuntu-latest"
+    steps:
+      - run: | 
+          ls -lrth
+          touch: teste.txt
+          echo: Teste Gravaçao de Arquivo" > teste.txt
+          cat: teste.txt
+        shell: bash
+
+  Download":
+    needs: 
+      - Upload
+    runs-on: "ubuntu-latest"
+    steps:
+      - run: | 
+          ls -lrth --color
+        shell: bash
