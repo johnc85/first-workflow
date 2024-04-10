@@ -22,3 +22,13 @@ jobs:
       - run: | 
           ls -lrth --color
         shell: bash
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: first-artifact
+      
+      - run: | 
+          ls -lrth --color
+          cat teste.txt
+        shell: bash
+        
