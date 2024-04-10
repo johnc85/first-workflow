@@ -20,5 +20,5 @@ jobs:
     steps:
       - run: | 
           name="Fulano"
-          print(f"Hello World, {name}"")
+          print(f"Hello World, {name}")
         shell: python
