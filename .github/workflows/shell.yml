@@ -1,0 +1,24 @@
+name: "Trabalhando com diferentes shell:"
+on: push
+jobs: 
+  shell-bash: 
+    runs-on: "ubuntu-latest"
+    steps:
+      - run: echo "Build"
+        shell: bash
+
+  shell-powershell:
+    runs-on: "windows-latest"
+    steps:
+      - run: | 
+          echo "Shell shell Power shell"
+            Get-Location
+        shell: powershell
+
+  shell-python:
+    runs-on: "windows-latest"
+    steps:
+      - run: | 
+          name="Fulano"
+          print(f"Hello World, {name}"")
+        shell: python
