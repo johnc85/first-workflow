@@ -10,9 +10,12 @@ jobs:
           echo "Teste Gravaçao de Arquivo" > teste.txt
           cat teste.txt
         shell: bash
-
+      - uses: actions/upload-artifact@v4
+        with:
+          name: first-artifact
+          path: ./teste.txt
   Download:
-    needs: 
+    needs:  # espera o job do Upload antes de iniciar
       - Upload
     runs-on: "ubuntu-latest"
     steps:
