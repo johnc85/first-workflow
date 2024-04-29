@@ -1,13 +1,12 @@
-name: "1-Events"
+name: "4-Repository-dispatch"
 
 on: 
-  push:
-    branches:
-      - "feature/**"
-
+  repository_dispatch:
+    types:
+      - [testando_repository_dispatch]
 jobs: 
   build: 
     runs-on: "ubuntu-latest"
     steps:
-      - run: echo "Feature branch"
+      - run: echo "testando repository_dispatch"repo
         shell: bash
