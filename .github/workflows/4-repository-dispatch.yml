@@ -1,0 +1,13 @@
+name: "1-Events"
+
+on: 
+  push:
+    branches:
+      - "feature/**"
+
+jobs: 
+  build: 
+    runs-on: "ubuntu-latest"
+    steps:
+      - run: echo "Feature branch"
+        shell: bash
