@@ -2,8 +2,14 @@ name: "3-Schedule"
 
 on:
     schedule:
+      # a cada 5 minutos execute meu workflow
       - cron: '*/5 * * * *'
-      
+      # #  todos os dias as 12:00 hrs execute meu workflow
+      # - cron: '0 12  * * *'
+      # #  todo dia 5 de casa mes execute meu workflow
+      # - cron: '0 0 5 * *'
+      # # todo os sabados as 00:00hrs do mes execute meu workflow
+      # - cron: '0 0 * * MON'
 jobs:
     test_schedule:
       runs-on: ubuntu-latest
