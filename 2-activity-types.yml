@@ -1,0 +1,13 @@
+name: "2-Activity types"
+
+on: 
+  pull_request:
+    types: "closed"
+    branches: "develop"
+
+jobs: 
+  build: 
+    runs-on: "ubuntu-latest"
+    steps:
+      - run: echo "Feature to develop"
+        shell: bash
