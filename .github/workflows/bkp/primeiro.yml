@@ -1,0 +1,17 @@
+name: "Primeiro Workflow"
+on: push
+jobs: 
+  build: 
+    runs-on: "ubuntu-latest"
+    steps:
+      - run: echo "Build"
+        shell: bash
+
+  build-multiline:
+    runs-on: "ubuntu-latest"
+    steps:
+      - run: | 
+          echo "Build-Multine"
+          date
+          ls -lrth --color
+        shell: bash

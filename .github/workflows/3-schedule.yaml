@@ -1,0 +1,15 @@
+name: "3-Schedule"
+
+on:
+    schedule:
+      - cron: '*/5 * * * *'
+      
+jobs:
+    test_schedule:
+      runs-on: ubuntu-latest
+      steps:
+        - name: "Test Schedule"
+          run: echo "Test Schedule at `date` "
+          shell: bash
+
+
