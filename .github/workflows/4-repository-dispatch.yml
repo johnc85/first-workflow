@@ -2,8 +2,7 @@ name: "4-Repository-dispatch"
 
 on: 
   repository_dispatch:
-    types:
-      - [testando_repository_dispatch]
+    types: [testando_repository_dispatch]
 jobs: 
   build: 
     runs-on: "ubuntu-latest"
