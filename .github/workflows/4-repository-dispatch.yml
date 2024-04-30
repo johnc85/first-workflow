@@ -2,10 +2,10 @@ name: "4-Repository-dispatch"
 
 on: 
   repository_dispatch:
-    types: [testando_repository_dispatch]
+    type: [testando_repository_dispatch]
 jobs: 
   build: 
     runs-on: "ubuntu-latest"
     steps:
-      - run: echo "testando repository_dispatch"repo
+      - run: echo "testando repository_dispatch"
         shell: bash
